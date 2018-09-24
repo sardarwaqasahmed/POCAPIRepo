@@ -1,15 +1,15 @@
 package com.search.api.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.search.api.NyTimesApiClient;
-import com.search.api.config.AppProperties;
+import com.search.api.payload.Article;
 import com.search.api.payload.DetailArticle;
-import com.search.api.payload.MasterArticle;
 
 import reactor.core.publisher.Mono;
 
@@ -21,20 +21,21 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/api/v1/")
 public class NyTimesController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(NyTimesController.class);
 
     @Autowired
-    NyTimesApiClient client;
-
-    @Autowired
-    AppProperties prop;
+    NyTimesApiHandler clientHandler;
 
     @GetMapping("/list/mostviewed/{section}/{period}")
-    public Mono<MasterArticle> getAllArticles(@PathVariable(value = "section") String section, @PathVariable(value = "period") String period) {
-        return client.getAllArticles(section, period, prop.getAPI_KEY());
+    public Mono<Article> getAllArticles(@PathVariable(value = "section") String section, @PathVariable(value = "period") String period) {
+    	logger.info("getAllArticles - {} - {}",section,period);
+        return clientHandler.getAllArticles(section, period);
     }
     
     @GetMapping("/list/mostviewed/{section}/{period}/{asset_id}")
     public Mono<DetailArticle> getArticleDetailById(@PathVariable(value = "section") String section, @PathVariable(value = "period") String period, @PathVariable(value = "asset_id") String assetId) {
-        return client.getArticleDetailById(section, period, assetId, prop.getAPI_KEY());
+    	logger.info("getArticleDetailById - {} - {} - {}",section,period,assetId);
+    	return clientHandler.getArticleDetailById(section, period, assetId);
     }
 }
