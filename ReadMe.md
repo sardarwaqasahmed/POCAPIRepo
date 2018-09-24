@@ -18,6 +18,9 @@ What things you need to install the software and how to install them
 * JDK 8+
 * Maven
 * GIT
+* Spring Boot 2.0
+* Spring WebFlux 2.0.5
+* Spring Tool Suite
 ```
 
 ### Installing
@@ -30,29 +33,29 @@ Clone the repository [POCAPIRepo](https://github.com/sardarwaqasahmed/POCAPIRepo
 git clone https://github.com/sardarwaqasahmed/POCAPIRepo.git
 ```
 
-Run the code generation utility
+Import the project in Spring tool suite as maven project
 
 ```
-If on windows, Double click the �CodeGenerator.bat�. 
+Right click on project in project explorer and run using spring boot
+Run As -> Spring Boot App
 Otherwise, just edit the .bat file and run the commands.
 ```
 
-Run the newly created project under "GeneratedProject"
+Or if you have maven env var configure in your local machine then
 
 ```
-cd GeneratedProject
+cd Go to NYTimesAPI root directoy and issue below command
 mvn spring-boot:run
 ```
-
-### Access the API - Get Article By ID
-
-http://localhost:8080/api/v1/list/mostviewed/all-sections/7/100000006067838
 
 ### Access the API - Get All Articles
 
 http://localhost:8080/api/v1/list/mostviewed/all-sections/7
 
-- Port can be changed from GeneratedProject -> src -> main -> resources -> application.properties
+### Access the API - Get ArticleDetail By ID
+
+http://localhost:8080/api/v1/list/mostviewed/all-sections/7/100000006114484
+
 
 ## Team Members
 
