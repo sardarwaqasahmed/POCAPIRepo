@@ -1,10 +1,13 @@
-# New York Time API Proof Of Concept
+#Project Title
 
-This utility is compiled to enable developers to kick-start new spring boot server within 5 minutes; saving the developers from writing all that boilerplate code. And that too as per swagger code standards.
+#NY Times Most Popular Articles Proof Of Concept
+
+We'll be going to use the "most viewed section" of NY Times API and build a Master/Detail APP for articles available.
 
 ## Purpose
-Starting a new project takes time and energy. This utility will help you to generate spring boot based code project with the following advantages:
 
+Purpose of this POC project is to build a simple app that will hit NY Times Most Popular Articles API, and show a list of articles.
+Once articles are showed as list on device then user will tapped on list and the article details will be shown for that particular article.
 	
 ## Getting Started
 
@@ -38,7 +41,6 @@ Import the project in Spring tool suite as maven project
 ```
 Right click on project in project explorer and run using spring boot
 Run As -> Spring Boot App
-Otherwise, just edit the .bat file and run the commands.
 ```
 
 Or if you have maven env var configure in your local machine then
