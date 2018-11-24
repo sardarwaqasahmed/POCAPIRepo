@@ -1,0 +1,17 @@
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\NyTimesApiApplication.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\config\AppProperties.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\model\Facet.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\model\MetaData.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\model\Media.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\payload\MostPopularArticleRequest.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\controller\NyTimesApiHandler.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\payload\DetailArticle.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\exception\ArticleNotFoundException.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\model\Result.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\service\NyTimesClient.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\payload\MasterArticle.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\service\impl\NyTimesClientImpl.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\controller\NyTimesController.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\config\RequestResponseLoggingInterceptor.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\model\ResultMin.java
+F:\Github\POCAPIRepo\NYTimesAPI\src\main\java\com\search\api\payload\Article.java

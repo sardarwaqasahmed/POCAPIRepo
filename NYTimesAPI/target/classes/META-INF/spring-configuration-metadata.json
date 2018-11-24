@@ -1,0 +1,32 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.search.api.config.AppProperties",
+      "name": "app",
+      "type": "com.search.api.config.AppProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.search.api.config.AppProperties",
+      "name": "app.a-p-i-b-a-s-e-u-r-l",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.search.api.config.AppProperties",
+      "name": "app.a-p-i-k-e-y",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.search.api.config.AppProperties",
+      "name": "app.description",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.search.api.config.AppProperties",
+      "name": "app.name",
+      "type": "java.lang.String"
+    }
+  ]
+}
